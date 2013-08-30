@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level name="Group1" minx="0" miny="0" maxx="1000" maxy="600" bgColor = "0xff777777" >
+	<layer name="Objs" xScroll="1.000" yScroll="1.000" >
+		<sprite class="Plain" name="BG" x="0.00" y="0.00" angle="0.00" flip="false" xScale="1.00" yScale="1.00" >
+          <properties>
+            <prop name="img" value="backstge/Backpage.png"/>
+          </properties>
+        </sprite>
+    </layer>
+	<layer name="No2" xScroll="1.000" yScroll="1.000" >
+		<map csv="backstge/mapCSV_Group1_No2.csv" tiles="backstge/backtiles.png" x="0.000" y="0.000" tileWidth="20" tileHeight="20" hasHits="false" collIdx="1" drawIdx="1" />
+	</layer>
+	<layer name="No1" xScroll="1.000" yScroll="1.000" >
+		<map csv="backstge/mapCSV_Group1_No1.csv" tiles="backstge/backtiles.png" x="0.000" y="0.000" tileWidth="20" tileHeight="20" hasHits="false" collIdx="1" drawIdx="1" />
+	</layer>
+	<layer name="No3" xScroll="1.000" yScroll="1.000" >
+		<map csv="backstge/mapCSV_Group1_No3.csv" tiles="backstge/backtiles.png" x="0.000" y="0.000" tileWidth="20" tileHeight="20" hasHits="false" collIdx="1" drawIdx="1" />
+	</layer>
+	<layer name="Top" xScroll="1.000" yScroll="1.000" >
+		<map csv="backstge/mapCSV_Group1_Top.csv" tiles="backstge/backtiles.png" x="0.000" y="0.000" tileWidth="20" tileHeight="20" hasHits="false" collIdx="1" drawIdx="1" />
+	</layer>
+	<layer name="Full" xScroll="1.000" yScroll="1.000" >
+		<map csv="backstge/mapCSV_Group1_Full.csv" tiles="backstge/backtiles.png" x="0.000" y="0.000" tileWidth="20" tileHeight="20" hasHits="false" collIdx="1" drawIdx="1" />
+	</layer>
+	<layer name="Objs" xScroll="1.000" yScroll="1.000" >
+		<sprite class="Door" name="Door2" x="880.00" y="505.50" angle="0.00" flip="false" xScale="1.00" yScale="1.00" >
+          <properties>
+            <prop name="destD" value="Door1" />
+            <prop name="dest" value="FirstRoom/Level_Group1.xml"/>
+          </properties>
+        </sprite>
+		<sprite class="Door" name="Door1" x="53.00" y="505.00" angle="0.00" flip="false" xScale="1.00" yScale="1.00" >
+          <properties>
+            <prop name="destD" value="Door1" />
+            <prop name="destC" value="Homepage"/>
+          </properties>
+        </sprite>
+	</layer>
+</level>

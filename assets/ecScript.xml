@@ -1,0 +1,85 @@
+<actions>
+	<trigger id="INIT">
+		<act id="TRIG" nCond="ECTALKED">INIT1</act>
+		<act id="TRIG" yCond="ECTALKED">INIT2</act>
+	</trigger>
+	<trigger id="INIT1">
+		<act id="SETVON">ECTALKED</act>	
+		<act id="SAY">Hi Ben</act>
+    	<act id="PSAY">Hi Eugene</act>
+    	<act id="SAY">What are you doing in this forest?</act>
+    	<act id="PSAY">Um... looking for research ideas ...</act>
+    	<act id="SAY">My intuition says that is unlikely, Ben</act>
+    	<act id="SETVON">FROM1</act>
+    	<act id="SETVOFF">FROM2</act>
+    	<act id="TRIG">FIRST CHOICE</act>
+    </trigger>
+    <trigger id="INIT2">
+    	<act id="PSAY">Hey Eugene</act>
+    	<act id="SAY">Still working on that game, huh?</act>
+    	<act id="SETVON">ECTALKED</act>
+    	<act id="SETVON">FROM2</act>
+    	<act id="SETVOFF">FROM1</act>
+    	<act id="TRIG">FIRST CHOICE</act>
+    </trigger>
+    <trigger id="FIRST CHOICE">
+ 	   	<act id="CHOICE">
+ 		<option targ="SUMMON" yCond="FROM1">
+    	No seriously, I am!  But I didn't bring any papers to read...
+      </option>
+      <option targ="SUMMON" yCond="FROM2">
+    	Actually, I was hoping to get my papers up here someplace...
+      </option>
+      <option targ="GOAWAY">
+	 	Come on, isn't this cool?
+      </option>
+      <option targ="ask" nCond="ECSTORYTOLD">
+        Wait, what are you doing here? 
+      </option>
+      <option targ="remind" yCond="ECSTORYTOLD">
+        What was it you wanted again? 
+      </option>
+    </act>
+  	</trigger>
+  <trigger id="GOAWAY">
+    <act id="SAY">Ben, just get back to work.</act>
+    <act id="PSAY">Ok, Eugene.</act>
+    <act id="END"/>
+  </trigger>
+  <trigger id="SUMMON">
+    <act id="SAY">That shouldn't be a problem, just summon up a link.</act>
+    <act id="PSAY">Huh?</act>
+    <act id="SAY">Like this...</act>
+    <act id="SPECIAL">prep</act>
+  </trigger>
+  <trigger id='ask'>
+  	<act id="SAY">I'm on a quest, Ben, not just wandering around.</act>
+  	<act id="PSAY">Wait, what? A quest?</act>
+  	<act id="SAY">That's what I said.</act>
+  	<act id="PSAY">What do you mean?</act>
+  	<act id="SAY">Well, I'll tell you, but I really hope this won't distract you from graduating.</act>
+  	<act id="SAY">As you know, I have in my office a set of coffee mugs whose linear combination reconstructs all other coffee mugs perfectly.</act>
+  	<act id="PSAY">Yes, of course.</act>
+  	<act id="SAY">But yesterday while fishing at India Point Park something reflected in the waves caught my eye</act>
+  	<act id="SAY">It was an object which defied logic, a coffee mug that lay outside the bounds of rational reality.</act>
+  	<act id="SAY">I looked up and saw a blue heron with the object in its claws.</act>
+  	<act id="PSAY">Oh, and because it was blue it didn't appear in the reflection, right?</act>
+  	<act id="SAY">Obviously, Ben, stop interrupting</act>
+  	<act id="PSAY">Sorry</act>
+  	<act id="SAY">So as I was saying, the bird flew off into this forest, and I followed.</act>
+  	<act id="PSAY">Oh, so where are you going to check next?</act>
+  	<act id="SAY">Well now that you're here, I don't have to, do I?</act>
+  	<act id="PSAY">Huh?</act>
+  	<act id="SAY">What do I pay you for anyways?</act>
+  	<act id="PSAY">Oh, I see... well, no problem.</act>
+  	<act id="PSAY">It would be my pleasure, I'll find it for you</act>
+  	<act id="SAY">Don't get distracted.</act>
+  	<act id="SETVON">ECSTORYTOLD</act>
+	<act id="END"/>
+  </trigger>
+  <trigger id="remind">
+    <act id="SAY">I'm looking for that cup, or rather, you are</act>
+    <act id="PSAY">Oh, right.  I'm on it, Eugene.</act>
+    <act id="END"/>
+  </trigger>
+</actions>

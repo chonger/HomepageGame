@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level name="Group1" minx="0" miny="0" maxx="640" maxy="800" bgColor = "0xff777777" >
+	<layer name="Full" xScroll="1.000" yScroll="1.000" >
+		<map csv="FirstRoom/mapCSV_Group1_Full.csv" tiles="graftree.png" x="0.000" y="0.000" tileWidth="32" tileHeight="32" hasHits="false" collIdx="1" drawIdx="1" />
+	</layer>
+	<layer name="No-B" xScroll="1.000" yScroll="1.000" >
+		<map csv="FirstRoom/mapCSV_Group1_No-B.csv" tiles="graftree.png" x="0.000" y="0.000" tileWidth="32" tileHeight="32" hasHits="false" collIdx="1" drawIdx="1" />
+	</layer>
+	<layer name="Top" xScroll="1.000" yScroll="1.000" >
+		<map csv="FirstRoom/mapCSV_Group1_Top.csv" tiles="graftree.png" x="0.000" y="0.000" tileWidth="32" tileHeight="32" hasHits="false" collIdx="1" drawIdx="1" />
+	</layer>
+	<layer name="No-F" xScroll="1.000" yScroll="1.000" >
+		<map csv="FirstRoom/mapCSV_Group1_No-F.csv" tiles="graftree.png" x="0.000" y="0.000" tileWidth="32" tileHeight="32" hasHits="false" collIdx="1" drawIdx="1" />
+	</layer>
+	<layer name="NPCs" xScroll="1.000" yScroll="1.000" >
+		<sprite class="Eugene" name="Eugene" x="412.00" y="699.00" angle="0.00" flip="false" xScale="1.00" yScale="1.00" >
+			<properties>
+				<prop name="script" value="ecScript.xml" />
+			</properties>
+		</sprite>
+	</layer>
+	<layer name="Enemies" xScroll="1.000" yScroll="1.000" >
+		<sprite class="Blueball" name="Blueball" x="109.00" y="291.00" angle="0.00" flip="false" xScale="1.00" yScale="1.00" />
+	</layer>
+	<layer name="Objs" xScroll="1.000" yScroll="1.000" >
+		<sprite class="Door" name="Door1" x="305.00" y="692.00" angle="0.00" flip="false" xScale="1.00" yScale="1.00" >
+          <properties>
+            <prop name="dest" value="FirstRoom/Level_Group1.xml" />
+          </properties>
+        </sprite>
+	</layer>
+</level>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<actions>
+	<trigger id="INIT">
+      <act id="PSAY">Woah! What happened to all my links!</act>
+      <act id="PSAY">I'd better investigate...</act>
+      <act id="PSAY">FADE IN THE DOOR, PLEASE!</act>
+      <act id="END"/>
+	</trigger>
+</actions>
